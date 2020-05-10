@@ -1,0 +1,78 @@
+$maincolor: #7028A0;
+$secondarycolor: #19C573;
+
+@media only screen and (max-width:768px){
+    body > .container-fluid .top-buffer{
+        margin-top: 30px;
+    }
+}
+@media only screen and (max-width:480px){
+    body > .container-fluid .top-buffer{
+        margin-top: 8px;
+    }
+}
+
+
+h1{
+    text-align: center;
+}
+
+table.center{
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+table.center td{
+    border-bottom: solid 1px #ddd;
+}
+
+.container-fluid.intro{
+    max-width: 960px;
+    padding: 30px;
+}
+
+#name-text{
+    color: $maincolor
+}
+
+
+
+.centered {
+    text-align: center;
+}
+.intro{
+    text-align: left;
+    .intro-div {
+        font-style: italic;
+        font-size: 40px;
+        font-weight: 100;
+        color: #778899
+    }
+    .intro-bottom{
+        text-align: right;
+    }
+    .top-buffer{
+        margin-top: 60px;
+    }
+}
+
+.mt-0{
+    color: $maincolor;
+    font-style: italic;
+}
+.mt-0::after{
+    content: " \2610";
+    font-style: normal;
+}
+
+.mt-0-completed{
+    @extend .mt-0;
+    color: $secondarycolor;
+
+}
+.mt-0-completed::after{
+    content: " \2611";
+    font-style: normal;
+}
